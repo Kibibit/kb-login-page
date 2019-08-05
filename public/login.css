@@ -82,6 +82,8 @@ h1.kibibit-logo {
 
 h1.achievibit {
   margin-top: 0 !important;
+  display: flex;
+  align-items: baseline;
 }
 
 .bg-overlay {
@@ -89,6 +91,10 @@ h1.achievibit {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
+}
+
+.user-bg {
+  z-index: 3;
 }
 
 body {

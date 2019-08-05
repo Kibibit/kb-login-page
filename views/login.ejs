@@ -24,19 +24,26 @@
 
 <body>
   <!-- particles.js container -->
+  <% if (!customBackground) { %>
   <div id="particles-js"></div>
   <div id="particles-js2"></div>
   <div class="bg-overlay"></div>
+  <% } else { %>
+  <img class="bg-overlay user-bg"
+       src="<%= customBackground %>">
+  <% } %>
 
   <div class="kb-card">
     <div class="content">
       <div class="logos">
+        <% if (!hideKibibit) { %>
         <h1 class="kibibit-logo">k<span class="red">i</span>b<span class="blue">i</span>b<span class="yellow">i</span>t
         </h1>
+        <% } %>
         <h1 class="achievibit">
-          <img style="height: 1.5em; transform: translateY(25%);"
+          <img style="height: 1.5em; transform: translateY(25%); margin-right: 0.4em;"
                src="<%= applicationIcon %>">
-          <%= applicationName %>
+          <span><%= applicationName %></span>
         </h1>
       </div>
       <div class="kb-description">
@@ -55,7 +62,11 @@
         <%- message %>
         <% } %>
       </div>
-      <a class="kb-having-trouble has-text-warning">Having trouble?</a>
+      <% if (helpUrl) { %>
+      <a class="kb-having-trouble has-text-warning"
+         href="<%= helpUrl %>"
+         target="_blank">Having trouble?</a>
+      <% } %>
     </div>
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
@@ -77,7 +88,9 @@
         </filter>
       </defs>
     </svg>
+    <% if (!customBackground) { %>
     <script src="login.js"></script>
+    <% } %>
 </body>
 
 </html>

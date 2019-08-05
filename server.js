@@ -50,6 +50,9 @@ const loginUrl = url.format({
 app.get('/', (req, res) => {
   const message = req.flash('error').map((msg) => marked(msg));
   res.render('login.ejs', {
+    customBackground: nconf.get('kbCustomBg'),
+    helpUrl: nconf.get('kbHelpUrl'),
+    hideKibibit: nconf.get('kbHideKibibit'),
     user: req.user,
     message: message,
     loginUrl: loginUrl,

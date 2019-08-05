@@ -17,7 +17,11 @@
 
 This library **requires** two parameters: `kbLoginUrl` & `kbApp`.
 
-You can also pass an optional parameter to set the library logo: `kbIcon`
+You can also pass the following optional parameters:
+- `kbIcon`
+- `kbCustomBg` - replace the particles default background
+- `kbHelpUrl` - if this parameter is found, a "Having trouble?" url is added
+- `kbHideKibibit` - in order to use in **non-kibibit** projects, this will hide the kibibit logo
 
 You can pass them either with environment variables or with passing it as cli arguments:
 
@@ -26,11 +30,14 @@ You can pass them either with environment variables or with passing it as cli ar
 KB_LOGIN_URL=https://achievibit.kibibit.io
 KB_APP=example app
 KB_ICON=<url to icon>
+KB_CUSTOM_BG=<url to bg>
+KB_HELP_URL=<url to help>
+KB_HIDE_KIBIBIT=true|false
 ```
 
 ### CLI
 ```
-node server.js --kbLoginUrl https://achievibit.kibibit.io --kbApp kb-coding-server --kbIcon https://image.flaticon.com/icons/svg/119/119595.svg
+node server.js --kbLoginUrl https://achievibit.kibibit.io --kbApp kb-coding-server --kbIcon https://image.flaticon.com/icons/svg/119/119595.svg --kbCustomBg http://hdwpro.com/wp-content/uploads/2017/03/Art-Background-Image.png --kbHelpUrl https://github.com/kibibit/ --kbHideKibibit false
 ```
 
 You can use whatever case you like, the application will convert it internally to camel case using lodash.
