@@ -308,7 +308,7 @@ body .kb-having-trouble:focus:after {
 .kb-login-buttons .button {
   justify-content: flex-start;
   transition: all 250ms;
-  padding-left: 50px;
+  height: auto;
 }
 
 .kb-login-buttons .button:hover {
@@ -316,5 +316,11 @@ body .kb-having-trouble:focus:after {
 }
 
 .kb-login-buttons .button i {
-  margin: 0 0.5em;
+  margin: 0 0.5em 0 0;
+}
+
+.kb-login-buttons .button>div {
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
 }
