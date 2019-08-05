@@ -15,8 +15,6 @@
 </p>
 <hr>
 
-<!-- GENERAL DESCRIPTION IF NEEDED -->
-
 This library **requires** two parameters: `kbLoginUrl` & `kbApp`.
 
 You can also pass an optional parameter to set the library logo: `kbIcon`
