@@ -42,6 +42,20 @@ node server.js --kbLoginUrl https://achievibit.kibibit.io --kbApp kb-coding-serv
 
 You can use whatever case you like, the application will convert it internally to camel case using lodash.
 
+## Examples
+
+- default background
+- hide kibibit logo
+- no help url
+
+![example01](screenshots/particles.gif)
+
+- custom background
+- help url set
+- show kibibit logo
+
+![example01](screenshots/custom-bg.png)
+
 ## Contributors
 
 Thanks goes to our contributors! ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
