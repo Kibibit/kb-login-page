@@ -48,13 +48,13 @@ You can use whatever case you like, the application will convert it internally t
 - hide kibibit logo
 - no help url
 
-![example01](screenshots/particles.gif)
+![example01](https://github.com/Kibibit/kb-login-page/blob/master/screenshots/particles.gif?raw=true)
 
 - custom background
 - help url set
 - show kibibit logo
 
-![example01](screenshots/custom-bg.png)
+![example01](https://github.com/Kibibit/kb-login-page/blob/master/screenshots//custom-bg.png?raw=true)
 
 ## Contributors
 
