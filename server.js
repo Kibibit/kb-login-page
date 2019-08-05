@@ -21,8 +21,6 @@ nconf.argv()
 })
 .required(['kbLoginUrl', 'kbApp'])
 
-console.log(nconf.get());
-
 // Constants
 const PORT = 8080;
 const HOST = '0.0.0.0';
